@@ -10,4 +10,3 @@ actix-cors = "0.6.4"
 actix-web = "4.4.0"
 saasus-sdk-rust = { git = "https://github.com/bigdragon0610/saasus-sdk-rust.git", tag = "v0.1.0" }
 serde = { version = "1.0.192", features = ["derive"] }
-dotenvy = "0.15.7"

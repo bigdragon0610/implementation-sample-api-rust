@@ -1,0 +1,4 @@
+FROM rust:1.75.0
+
+ENV CARGO_BUILD_TARGET_DIR=/tmp/target
+WORKDIR /app

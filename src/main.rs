@@ -1,6 +1,5 @@
 use actix_cors::Cors;
 use actix_web::{get, web::Query, App, HttpRequest, HttpResponse, HttpServer, Responder};
-use dotenvy::dotenv;
 use serde::Deserialize;
 
 fn get_id_token(req: HttpRequest) -> String {
@@ -79,8 +78,6 @@ async fn get_users(req: HttpRequest) -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    dotenv().ok();
-
     HttpServer::new(|| {
         let cors = Cors::default()
             .allowed_origin("http://localhost:3000")
@@ -95,7 +92,7 @@ async fn main() -> std::io::Result<()> {
             .service(get_me)
             .service(get_users)
     })
-    .bind(("127.0.0.1", 8080))?
+    .bind(("0.0.0.0", 8080))?
     .run()
     .await
 }
