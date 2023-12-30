@@ -28,5 +28,5 @@ SAASUS_SECRET_KEY="xxxxxxxxxx"
 ```sh
 docker compose up -d
 docker compose exec app bash
-cargo run # Inside the app container
+make run # Inside the app container
 ```
