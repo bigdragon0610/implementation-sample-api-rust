@@ -1,8 +1,13 @@
-# implementation-sample-api-rust
+# SaaSus SDK for Rust - Sample API
 
-This is a SaaS implementation sample using the SaaSus SDK for Rust.
+This is a sample application that demonstrates how to use the [SaaSus SDK for Rust](https://github.com/bigdragon0610/saasus-sdk-rust).
 
-## Run Rust API
+## Prerequisites
+
+This sample application is designed to be used together with the frontend sample application:
+- [Frontend Sample for React](https://github.com/saasus-platform/implementation-sample-front-react/)
+
+## Run the API
 ```sh
 # Run in any directory
 git clone git@github.com:bigdragon0610/implementation-sample-api-rust.git
@@ -21,6 +26,6 @@ SAASUS_SECRET_KEY="xxxxxxxxxx"
 ```
 
 ```sh
-# Run API
+# API will run on http://localhost
 cargo run
 ```
