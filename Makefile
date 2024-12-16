@@ -1,2 +1,2 @@
 run:
-	cargo watch -s 'mold -run cargo run'
+	cargo watch -x run

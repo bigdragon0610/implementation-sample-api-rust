@@ -1,11 +1,6 @@
 # implementation-sample-api-rust
 
-This is a SaaS implementation sample using the SaaSus SDK
-
-See the documentation [API implementation using SaaS Platform](https://docs.saasus.io/docs/implementing-authentication-using-saasus-platform-apiserver)
-
-## Prerequisites
-- docker
+This is a SaaS implementation sample using the SaaSus SDK for Rust.
 
 ## Run Rust API
 ```sh
@@ -26,7 +21,6 @@ SAASUS_SECRET_KEY="xxxxxxxxxx"
 ```
 
 ```sh
-docker compose up -d
-docker compose exec app bash
-make run # Inside the app container
+# Run API
+cargo run
 ```
